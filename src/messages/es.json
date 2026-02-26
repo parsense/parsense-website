@@ -1,0 +1,91 @@
+{
+  "Nav": {
+    "features": "Caracter\u00edsticas",
+    "howItWorks": "C\u00f3mo Funciona",
+    "technology": "Tecnolog\u00eda",
+    "investors": "Inversionistas",
+    "earlyAccess": "Acceso Anticipado"
+  },
+  "Hero": {
+    "title": "Tu Caddie y Entrenador de Swing con IA",
+    "subtitle": "M\u00e1s que una calculadora de yardas. Un salto transformador en tecnolog\u00eda de golf que procesa datos ambientales en tiempo real y tu perfil \u00fanico de swing para recomendar la estrategia \u00f3ptima en cada golpe.",
+    "comingSoon": "Pr\u00f3ximamente",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "Problem": {
+    "sectionTag": "La Evoluci\u00f3n",
+    "oldWayTitle": "La Forma Tradicional",
+    "oldWaySubtitle": "Datos Est\u00e1ticos, Sin Contexto",
+    "oldWay1": "\u00bfQu\u00e9 tan lejos est\u00e1 el hoyo? GPS est\u00e1tico que solo responde eso",
+    "oldWay2": "Ignora el viento, la humedad y la temperatura",
+    "oldWay3": "Ignora la condici\u00f3n del c\u00e9sped y el \u00e1ngulo del lie",
+    "oldWay4": "Ignora las fallas espec\u00edficas de tu swing",
+    "oldWay5": "Ofrece datos crudos, no consejos accionables",
+    "newWayTitle": "La Forma ParSense",
+    "newWaySubtitle": "Inteligencia Contextual",
+    "newWay1": "Marco Ag\u00e9ntico impulsado por LLMs Gemini y Claude",
+    "newWay2": "Integraci\u00f3n de viento, humedad y temperatura en tiempo real",
+    "newWay3": "Evaluaci\u00f3n del c\u00e9sped por IA mediante reconocimiento de im\u00e1genes",
+    "newWay4": "An\u00e1lisis de swing personalizado y coaching",
+    "newWay5": "Recomendaciones estrat\u00e9gicas: palo, l\u00ednea de tiro, navegaci\u00f3n de obst\u00e1culos"
+  },
+  "Features": {
+    "sectionTag": "Caracter\u00edsticas Principales",
+    "title": "Golf Inteligente, Redefinido",
+    "subtitle": "Una red de agentes de IA especializados trabajando en paralelo para ofrecer estrategia hiperpersonalizada en cada golpe.",
+    "agentic": {
+      "title": "Marco Ag\u00e9ntico",
+      "description": "Construido sobre una robusta red de agentes y subagentes especializados impulsados por Modelos de Lenguaje Grande (Gemini y Claude). No es un algoritmo lineal \u2014 es una inteligencia paralela que procesa m\u00faltiples flujos de datos simult\u00e1neamente para generar consejos accionables."
+    },
+    "environmental": {
+      "title": "Datos Ambientales en Tiempo Real",
+      "description": "Ubicaci\u00f3n GPS de precisi\u00f3n, distancia a bandera, distancias de vuelo a peligros. Integraci\u00f3n con APIs clim\u00e1ticas para viento, temperatura y humedad. Mapeo detallado de elevaci\u00f3n para distancias efectivas."
+    },
+    "turf": {
+      "title": "Evaluaci\u00f3n del Terreno",
+      "description": "Tecnolog\u00eda de reconocimiento de im\u00e1genes que analiza fotos de la bola y el entorno para evaluar condiciones del c\u00e9sped en tiempo real \u2014 longitud, humedad y \u00e1ngulo del lie \u2014 que influyen significativamente en la ejecuci\u00f3n del golpe."
+    },
+    "profile": {
+      "title": "Perfil Integral del Jugador",
+      "description": "Antes del primer golpe, ParSense construye un perfil din\u00e1mico: edad, condici\u00f3n f\u00edsica, h\u00e1ndicap, historial de rondas, configuraci\u00f3n completa de palos y verificaci\u00f3n de gapping para asegurar que cada recomendaci\u00f3n se ajuste a tus capacidades reales."
+    },
+    "swing": {
+      "title": "An\u00e1lisis Avanzado de Video de Swing",
+      "description": "Sube videos de tu swing para an\u00e1lisis por IA de tempo, trayectoria del palo y \u00e1ngulo de ataque. Identifica fallas comunes para recomendar el palo \u00f3ptimo seg\u00fan las caracter\u00edsticas actuales de tu swing \u2014 no solo el te\u00f3rico."
+    }
+  },
+  "HowItWorks": {
+    "sectionTag": "C\u00f3mo Funciona",
+    "title": "De Datos a Estrategia en Segundos",
+    "step1Title": "Recopilaci\u00f3n de Datos",
+    "step1Desc": "Posicionamiento GPS, APIs meteorol\u00f3gicas, mapeo de elevaci\u00f3n y fotos opcionales del terreno se capturan en tiempo real al acercarte a tu golpe.",
+    "step2Title": "Procesamiento IA",
+    "step2Desc": "El Marco Ag\u00e9ntico despacha subagentes especializados para analizar datos ambientales, cruzar referencias con tu perfil de jugador y evaluar los peligros del campo simult\u00e1neamente.",
+    "step3Title": "Recomendaci\u00f3n Estrat\u00e9gica",
+    "step3Desc": "Recibe una selecci\u00f3n precisa de palo, l\u00ednea de tiro \u00f3ptima y estrategia inteligente de navegaci\u00f3n de obst\u00e1culos \u2014 todo personalizado a tu juego."
+  },
+  "Investors": {
+    "sectionTag": "Para Inversionistas",
+    "title": "Por Qu\u00e9 ParSense Cambia el Juego",
+    "subtitle": "Un modelo SaaS altamente escalable construido sobre un robusto Marco Ag\u00e9ntico. ParSense captura la lucrativa intersecci\u00f3n de Tecnolog\u00eda Deportiva e Inteligencia Artificial, posicionado para expansi\u00f3n r\u00e1pida y mejora continua del ciclo de datos.",
+    "metric1Title": "IA Ag\u00e9ntica",
+    "metric1Desc": "Construido sobre LLMs Gemini + Claude con una red de subagentes especializados",
+    "metric2Title": "SaaS Escalable",
+    "metric2Desc": "Modelo de suscripci\u00f3n con un poderoso ciclo de datos que mejora con cada ronda jugada",
+    "metric3Title": "Etapa Pre-Seed",
+    "metric3Desc": "Ronda Friends & Family mediante acuerdo SAFE \u2014 oportunidad temprana de unirse a una plataforma transformadora"
+  },
+  "CTA": {
+    "title": "\u00bfListo para Bajar tu H\u00e1ndicap?",
+    "subtitle": "\u00danete a la lista de espera y s\u00e9 de los primeros en experimentar el futuro de la inteligencia en golf.",
+    "comingSoon": "Pr\u00f3ximamente"
+  },
+  "Footer": {
+    "copyright": "\u00a9 2026 ParSense\u00ae. Todos los derechos reservados.",
+    "privacy": "Pol\u00edtica de Privacidad",
+    "terms": "T\u00e9rminos de Servicio",
+    "investorContact": "Consultas de Inversionistas",
+    "tagline": "Inteligencia de Golf con IA"
+  }
+}

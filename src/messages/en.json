@@ -1,0 +1,91 @@
+{
+  "Nav": {
+    "features": "Features",
+    "howItWorks": "How it Works",
+    "technology": "Technology",
+    "investors": "Investors",
+    "earlyAccess": "Get Early Access"
+  },
+  "Hero": {
+    "title": "Your AI-Powered Caddie and Swing Coach",
+    "subtitle": "More than a yardage calculator. A transformative leap in golf technology that processes real-time environmental data and your unique swing profile to recommend the optimal strategy for every shot.",
+    "comingSoon": "Coming Soon",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "Problem": {
+    "sectionTag": "The Evolution",
+    "oldWayTitle": "The Old Way",
+    "oldWaySubtitle": "Static Data, No Context",
+    "oldWay1": "Static GPS that only answers: how far is the hole?",
+    "oldWay2": "Ignores wind speed, humidity, and temperature",
+    "oldWay3": "Ignores turf conditions and lie angle",
+    "oldWay4": "Ignores your specific swing faults",
+    "oldWay5": "Offers raw data, not actionable advice",
+    "newWayTitle": "The ParSense Way",
+    "newWaySubtitle": "Contextual Intelligence",
+    "newWay1": "Agentic Framework powered by Gemini and Claude LLMs",
+    "newWay2": "Real-time wind, humidity, and temperature integration",
+    "newWay3": "AI turf assessment via image recognition",
+    "newWay4": "Personalized swing analysis and coaching",
+    "newWay5": "Strategic recommendations: club, line of aim, hazard navigation"
+  },
+  "Features": {
+    "sectionTag": "Core Features",
+    "title": "Intelligent Golf, Redefined",
+    "subtitle": "A network of specialized AI agents working in parallel to deliver hyper-personalized strategy for every shot.",
+    "agentic": {
+      "title": "Agentic Framework",
+      "description": "Built on a robust network of specialized agents and subagents powered by Large Language Models (Gemini and Claude). Not a linear algorithm — a parallel intelligence that processes multiple data streams simultaneously to generate actionable advice."
+    },
+    "environmental": {
+      "title": "Real-Time Environmental Data",
+      "description": "Precision GPS location, distance to pin, carry distances to hazards. Integration with local weather APIs for wind, temperature, and humidity. Detailed elevation mapping for effective uphill/downhill distances."
+    },
+    "turf": {
+      "title": "Turf Assessment",
+      "description": "Image recognition technology analyzes photos of the ball and surroundings to assess real-time turf conditions — grass length, wetness, and lie angle — which significantly influence shot execution."
+    },
+    "profile": {
+      "title": "Comprehensive Player Profile",
+      "description": "Before the first shot, ParSense builds a dynamic profile: age, fitness level, handicap, round history, complete club setup, and gapping verification to ensure every recommendation matches your actual capabilities."
+    },
+    "swing": {
+      "title": "Advanced Swing Video Analysis",
+      "description": "Upload swing videos for AI analysis of tempo, club path, and angle of attack. Identifies common faults to recommend the optimal club for your current swing characteristics — not just the theoretical one."
+    }
+  },
+  "HowItWorks": {
+    "sectionTag": "How It Works",
+    "title": "From Data to Strategy in Seconds",
+    "step1Title": "Data Collection",
+    "step1Desc": "GPS positioning, weather APIs, elevation mapping, and optional turf photos are captured in real time as you approach your shot.",
+    "step2Title": "AI Processing",
+    "step2Desc": "The Agentic Framework dispatches specialized subagents to analyze environmental data, cross-reference your player profile, and evaluate course hazards simultaneously.",
+    "step3Title": "Strategic Recommendation",
+    "step3Desc": "Receive a precise club selection, optimal line of aim, and intelligent hazard navigation strategy — all personalized to your game."
+  },
+  "Investors": {
+    "sectionTag": "For Investors",
+    "title": "Why ParSense is a Game Changer",
+    "subtitle": "A highly scalable SaaS model built on a robust Agentic Framework. ParSense captures the lucrative intersection of Sports Tech and Artificial Intelligence, positioned for rapid expansion and continuous data-loop improvement.",
+    "metric1Title": "Agentic AI",
+    "metric1Desc": "Built on Gemini + Claude LLMs with a network of specialized subagents",
+    "metric2Title": "Scalable SaaS",
+    "metric2Desc": "Subscription model with a powerful data flywheel that improves with every round played",
+    "metric3Title": "Pre-Seed Stage",
+    "metric3Desc": "Friends & Family round via SAFE agreement — early opportunity to join a transformative platform"
+  },
+  "CTA": {
+    "title": "Ready to Lower Your Handicap?",
+    "subtitle": "Join the waitlist and be among the first to experience the future of golf intelligence.",
+    "comingSoon": "Coming Soon"
+  },
+  "Footer": {
+    "copyright": "\u00a9 2026 ParSense\u00ae. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "investorContact": "Investor Inquiries",
+    "tagline": "AI-Powered Golf Intelligence"
+  }
+}
