@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "ParSense\u00ae | Inteligencia de Golf con IA",
+    "description": "Tu Caddie y Entrenador de Swing con IA. Un salto transformador en tecnolog\u00eda de golf que procesa datos ambientales en tiempo real y tu perfil \u00fanico de swing."
+  },
   "Nav": {
     "features": "Caracter\u00edsticas",
     "howItWorks": "C\u00f3mo Funciona",
@@ -11,7 +15,12 @@
     "subtitle": "M\u00e1s que una calculadora de yardas. Un salto transformador en tecnolog\u00eda de golf que procesa datos ambientales en tiempo real y tu perfil \u00fanico de swing para recomendar la estrategia \u00f3ptima en cada golpe.",
     "comingSoon": "Pr\u00f3ximamente",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "downloadApple": "Cons\u00edguelo en el",
+    "downloadGoogle": "Disponible en",
+    "tech1": "APIs de GPS y Clima",
+    "tech2": "LLMs Gemini y Claude",
+    "tech3": "IA de Swing"
   },
   "Problem": {
     "sectionTag": "La Evoluci\u00f3n",
@@ -67,19 +76,55 @@
   },
   "Investors": {
     "sectionTag": "Para Inversionistas",
-    "title": "Por Qu\u00e9 ParSense Cambia el Juego",
-    "subtitle": "Un modelo SaaS altamente escalable construido sobre un robusto Marco Ag\u00e9ntico. ParSense captura la lucrativa intersecci\u00f3n de Tecnolog\u00eda Deportiva e Inteligencia Artificial, posicionado para expansi\u00f3n r\u00e1pida y mejora continua del ciclo de datos.",
-    "metric1Title": "IA Ag\u00e9ntica",
+    "title": "Por Qué ParSense Cambia el Juego",
+    "subtitle": "Un modelo SaaS altamente escalable construido sobre un robusto Marco Agéntico. ParSense captura la lucrativa intersección de Tecnología Deportiva e Inteligencia Artificial, posicionado para expansión rápida y mejora continua del ciclo de datos.",
+    "metric1Title": "IA Agéntica",
     "metric1Desc": "Construido sobre LLMs Gemini + Claude con una red de subagentes especializados",
     "metric2Title": "SaaS Escalable",
-    "metric2Desc": "Modelo de suscripci\u00f3n con un poderoso ciclo de datos que mejora con cada ronda jugada",
+    "metric2Desc": "Modelo de suscripción con un poderoso ciclo de datos que mejora con cada ronda jugada",
     "metric3Title": "Etapa Pre-Seed",
-    "metric3Desc": "Ronda Friends & Family mediante acuerdo SAFE \u2014 oportunidad temprana de unirse a una plataforma transformadora"
+    "metric3Desc": "Ronda Friends & Family mediante acuerdo SAFE — oportunidad temprana de unirse a una plataforma transformadora"
+  },
+  "Testimonials": {
+    "sectionTag": "Acceso Anticipado",
+    "title": "Confiado por Golfistas",
+    "t1Quote": "\"ParSense cambió por completo mi enfoque. Es como tener un caddie del tour en mi bolsillo. Bajé 3 golpes en mi primer mes.\"",
+    "t1Author": "Michael T.",
+    "t1Role": "Hándicap 12",
+    "t2Quote": "\"La función de análisis de swing detectó una falla en mi ángulo de ataque que mi entrenador pasó por alto. Las recomendaciones de palos son exactas.\"",
+    "t2Author": "Sarah J.",
+    "t2Role": "Hándicap 8",
+    "t3Quote": "\"Por fin, una app de golf que realmente usa el viento y la elevación en tiempo real. Elimina las dudas en los tiros de aproximación.\"",
+    "t3Author": "David R.",
+    "t3Role": "Golfista Scratch"
+  },
+  "Stats": {
+    "stat1Value": "3.2",
+    "stat1Label": "Golpes Ahorrados en Promedio",
+    "stat2Value": "10k+",
+    "stat2Label": "Campos Mapeados",
+    "stat3Value": "98%",
+    "stat3Label": "Precisión en Recomendación de Palos"
+  },
+  "FAQ": {
+    "sectionTag": "Preguntas Frecuentes",
+    "title": "Preguntas Frecuentes",
+    "q1": "¿ParSense es legal en torneos?",
+    "a1": "Sí, ParSense incluye un 'Modo Torneo' que desactiva las funciones restringidas por las reglas de la USGA (como viento y elevación) manteniendo activo el GPS estándar.",
+    "q2": "¿Necesito conexión a internet en el campo?",
+    "a2": "ParSense guarda en caché los mapas del campo y datos básicos sin conexión. Sin embargo, el viento en tiempo real y el procesamiento de IA requieren conexión celular.",
+    "q3": "¿Cómo funciona el análisis de swing?",
+    "a3": "Simplemente graba tu swing usando la cámara de tu teléfono. Nuestra IA analiza tu biomecánica, tempo y trayectoria del palo para darte retroalimentación instantánea y accionable.",
+    "q4": "¿Cuándo estará disponible la app?",
+    "a4": "Actualmente estamos en beta cerrada. Únete a la lista de espera a continuación para obtener acceso anticipado antes de nuestro lanzamiento público."
   },
   "CTA": {
-    "title": "\u00bfListo para Bajar tu H\u00e1ndicap?",
-    "subtitle": "\u00danete a la lista de espera y s\u00e9 de los primeros en experimentar el futuro de la inteligencia en golf.",
-    "comingSoon": "Pr\u00f3ximamente"
+    "title": "¿Listo para Bajar tu Hándicap?",
+    "subtitle": "Únete a la lista de espera y sé de los primeros en experimentar el futuro de la inteligencia en golf.",
+    "placeholder": "Ingresa tu correo electrónico",
+    "button": "Unirse a la Lista",
+    "success": "¡Estás en la lista! Nos pondremos en contacto pronto.",
+    "comingSoon": "Próximamente"
   },
   "Footer": {
     "copyright": "\u00a9 2026 ParSense\u00ae. Todos los derechos reservados.",

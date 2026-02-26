@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "ParSense\u00ae | AI-Powered Golf Intelligence",
+    "description": "Your AI-Powered Caddie and Swing Coach. A transformative leap in golf technology that processes real-time environmental data and your unique swing profile."
+  },
   "Nav": {
     "features": "Features",
     "howItWorks": "How it Works",
@@ -11,7 +15,12 @@
     "subtitle": "More than a yardage calculator. A transformative leap in golf technology that processes real-time environmental data and your unique swing profile to recommend the optimal strategy for every shot.",
     "comingSoon": "Coming Soon",
     "appStore": "App Store",
-    "googlePlay": "Google Play"
+    "googlePlay": "Google Play",
+    "downloadApple": "Download on the",
+    "downloadGoogle": "Get it on",
+    "tech1": "GPS + Weather APIs",
+    "tech2": "Gemini + Claude LLMs",
+    "tech3": "Swing AI"
   },
   "Problem": {
     "sectionTag": "The Evolution",
@@ -76,9 +85,45 @@
     "metric3Title": "Pre-Seed Stage",
     "metric3Desc": "Friends & Family round via SAFE agreement — early opportunity to join a transformative platform"
   },
+  "Testimonials": {
+    "sectionTag": "Early Access",
+    "title": "Trusted by Golfers",
+    "t1Quote": "\"ParSense completely changed my approach. It's like having a tour caddie in my pocket. I dropped 3 strokes in my first month.\"",
+    "t1Author": "Michael T.",
+    "t1Role": "12 Handicap",
+    "t2Quote": "\"The swing analysis feature caught a flaw in my attack angle that my coach missed. The club recommendations are spot on.\"",
+    "t2Author": "Sarah J.",
+    "t2Role": "8 Handicap",
+    "t3Quote": "\"Finally, a golf app that actually uses real-time wind and elevation. It takes the guesswork out of approach shots.\"",
+    "t3Author": "David R.",
+    "t3Role": "Scratch Golfer"
+  },
+  "Stats": {
+    "stat1Value": "3.2",
+    "stat1Label": "Average Strokes Saved",
+    "stat2Value": "10k+",
+    "stat2Label": "Courses Mapped",
+    "stat3Value": "98%",
+    "stat3Label": "Club Recommendation Accuracy"
+  },
+  "FAQ": {
+    "sectionTag": "FAQ",
+    "title": "Frequently Asked Questions",
+    "q1": "Is ParSense tournament legal?",
+    "a1": "Yes, ParSense includes a 'Tournament Mode' that disables features restricted by USGA rules (like wind and elevation) while keeping standard GPS active.",
+    "q2": "Do I need an internet connection on the course?",
+    "a2": "ParSense caches course maps and basic data offline. However, real-time wind and AI processing require a cellular connection.",
+    "q3": "How does the swing analysis work?",
+    "a3": "Simply record your swing using your phone's camera. Our AI analyzes your biomechanics, tempo, and club path to provide instant, actionable feedback.",
+    "q4": "When will the app be available?",
+    "a4": "We are currently in closed beta. Join the waitlist below to get early access before our public launch."
+  },
   "CTA": {
     "title": "Ready to Lower Your Handicap?",
     "subtitle": "Join the waitlist and be among the first to experience the future of golf intelligence.",
+    "placeholder": "Enter your email address",
+    "button": "Join Waitlist",
+    "success": "You're on the list! We'll be in touch soon.",
     "comingSoon": "Coming Soon"
   },
   "Footer": {
