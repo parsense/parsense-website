@@ -629,7 +629,7 @@ export default function HomePage() {
                             src={card.image}
                             alt={card.title}
                             fill
-                            className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-60"
+                            className="object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
                           />
                         </div>
                       )}
@@ -638,7 +638,7 @@ export default function HomePage() {
                 );
               })}
 
-              {/* Vertical Image Placeholder */}
+              {/* Vertical Image */}
               <motion.div
                 variants={scaleIn}
                 className="relative hidden md:block md:col-start-3 md:row-start-2 md:row-span-2 overflow-hidden rounded-xl border border-white/5 bg-white/2 group min-h-100 lg:min-h-100"
@@ -648,7 +648,7 @@ export default function HomePage() {
                   src="/images/bento-vertical.webp"
                   alt="ParSense AI Analysis"
                   fill
-                  className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-60"
+                  className="object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
                 />
               </motion.div>
             </motion.div>
