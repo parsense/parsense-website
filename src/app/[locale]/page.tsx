@@ -15,8 +15,7 @@ import {
   Zap,
   TrendingUp,
   Handshake,
-  Apple,
-  Play,
+
   ArrowDown,
   ArrowUp,
   Menu,
@@ -77,29 +76,20 @@ const scaleIn = {
 function StoreButton({
   store,
   comingSoon,
-  downloadText,
-  storeName,
 }: {
   store: "apple" | "google";
   comingSoon: string;
-  downloadText: string;
-  storeName: string;
 }) {
+  const isApple = store === "apple";
   return (
     <div className="relative group cursor-pointer">
-      <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-sm transition-all group-hover:border-emerald/30 group-hover:bg-white/8">
-        {store === "apple" ? (
-          <Apple className="h-7 w-7 text-white" />
-        ) : (
-          <Play className="h-7 w-7 text-white fill-white" />
-        )}
-        <div className="text-left">
-          <p className="text-[10px] leading-none text-white/60 uppercase tracking-wider">
-            {downloadText}
-          </p>
-          <p className="text-sm font-semibold text-white">{storeName}</p>
-        </div>
-      </div>
+      <Image
+        src={isApple ? "/images/apple-appstore.webp" : "/images/google-play.webp"}
+        alt={isApple ? "Download on the App Store" : "Get it on Google Play"}
+        width={180}
+        height={53}
+        className="rounded-lg transition-opacity group-hover:opacity-90"
+      />
       <Badge className="absolute -top-2.5 -right-2 bg-emerald text-white text-[10px] px-2 py-0.5 shadow-lg shadow-emerald/20">
         {comingSoon}
       </Badge>
@@ -365,14 +355,10 @@ export default function HomePage() {
                     <StoreButton
                       store="apple"
                       comingSoon={hero("comingSoon")}
-                      downloadText={hero("downloadApple")}
-                      storeName={hero("appStore")}
                     />
                     <StoreButton
                       store="google"
                       comingSoon={hero("comingSoon")}
-                      downloadText={hero("downloadGoogle")}
-                      storeName={hero("googlePlay")}
                     />
                   </motion.div>
 
@@ -1084,14 +1070,10 @@ export default function HomePage() {
                 <StoreButton
                   store="apple"
                   comingSoon={cta("comingSoon")}
-                  downloadText={hero("downloadApple")}
-                  storeName={hero("appStore")}
                 />
                 <StoreButton
                   store="google"
                   comingSoon={cta("comingSoon")}
-                  downloadText={hero("downloadGoogle")}
-                  storeName={hero("googlePlay")}
                 />
               </motion.div>
             </motion.div>
