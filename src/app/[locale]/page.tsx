@@ -88,7 +88,7 @@ function StoreButton({
         alt={isApple ? "Download on the App Store" : "Get it on Google Play"}
         width={180}
         height={53}
-        className="rounded-lg transition-opacity group-hover:opacity-90"
+        className="rounded-md transition-opacity group-hover:opacity-90"
       />
       <Badge className="absolute -top-2.5 -right-2 bg-emerald text-white text-[10px] px-2 py-0.5 shadow-lg shadow-emerald/20">
         {comingSoon}
