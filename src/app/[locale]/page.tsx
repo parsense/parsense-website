@@ -34,7 +34,6 @@ import { Separator } from "@/components/ui/separator";
 import SectionWrapper from "@/components/section-wrapper";
 import HeroBackground from "@/components/svg/hero-background";
 import AppMockup from "@/components/svg/app-mockup";
-import SwingAnalysis from "@/components/svg/swing-analysis";
 import LanguageToggle from "@/components/language-toggle";
 import { useRef, useState } from "react";
 
@@ -623,7 +622,7 @@ export default function HomePage() {
                         </CardDescription>
                       </CardContent>
                       {card.image && (
-                        <div className="relative h-48 w-full mt-auto overflow-hidden border-t border-white/5">
+                        <div className="relative aspect-video w-full mt-auto overflow-hidden border-t border-white/5">
                           <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] to-transparent z-10 opacity-80" />
                           <Image
                             src={card.image}
@@ -761,9 +760,15 @@ export default function HomePage() {
               variants={scaleIn}
               className="mt-20 flex justify-center"
             >
-              <div className="relative w-full max-w-2xl">
+              <div className="relative w-full max-w-4xl">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-75 rounded-full bg-blue/5 blur-[100px]" />
-                <SwingAnalysis className="relative z-10 w-full" />
+                <Image
+                  src="/images/swing-biomechanics.webp"
+                  alt="ParSense Swing Biomechanics Analysis"
+                  width={1408}
+                  height={768}
+                  className="relative z-10 w-full rounded-2xl border border-white/10 shadow-2xl shadow-blue/10"
+                />
               </div>
             </motion.div>
           </div>
