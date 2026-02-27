@@ -622,13 +622,13 @@ export default function HomePage() {
                         </CardDescription>
                       </CardContent>
                       {card.image && (
-                        <div className="relative aspect-video w-full mt-auto overflow-hidden border-t border-white/5">
+                        <div className="relative h-48 sm:h-56 w-full mt-auto overflow-hidden border-t border-white/5">
                           <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] to-transparent z-10 opacity-80" />
                           <Image
                             src={card.image}
                             alt={card.title}
                             fill
-                            className="object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+                            className="object-cover object-center opacity-80 transition-opacity duration-500 group-hover:opacity-100"
                           />
                         </div>
                       )}
@@ -647,7 +647,7 @@ export default function HomePage() {
                   src="/images/bento-vertical.webp"
                   alt="ParSense AI Analysis"
                   fill
-                  className="object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+                  className="object-cover object-top opacity-80 transition-opacity duration-500 group-hover:opacity-100"
                 />
               </motion.div>
             </motion.div>
