@@ -145,6 +145,7 @@ export default function HomePage() {
       accent: "emerald" as const,
       span: "md:col-span-2" as const,
       image: "/images/bento-agentic.webp",
+      imageClass: "h-48 sm:h-56",
     },
     {
       icon: CloudSun,
@@ -174,6 +175,7 @@ export default function HomePage() {
       accent: "emerald" as const,
       span: "md:col-span-2" as const,
       image: "/images/bento-swing.webp",
+      imageClass: "aspect-video",
     },
   ];
 
@@ -622,7 +624,7 @@ export default function HomePage() {
                         </CardDescription>
                       </CardContent>
                       {card.image && (
-                        <div className="relative h-48 sm:h-56 w-full mt-auto overflow-hidden border-t border-white/5">
+                        <div className={`relative w-full mt-auto overflow-hidden border-t border-white/5 ${card.imageClass || "h-48 sm:h-56"}`}>
                           <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] to-transparent z-10 opacity-80" />
                           <Image
                             src={card.image}
