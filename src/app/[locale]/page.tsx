@@ -97,9 +97,7 @@ function StoreButton({
           <p className="text-[10px] leading-none text-white/60 uppercase tracking-wider">
             {downloadText}
           </p>
-          <p className="text-sm font-semibold text-white">
-            {storeName}
-          </p>
+          <p className="text-sm font-semibold text-white">{storeName}</p>
         </div>
       </div>
       <Badge className="absolute -top-2.5 -right-2 bg-emerald text-white text-[10px] px-2 py-0.5 shadow-lg shadow-emerald/20">
@@ -147,6 +145,7 @@ export default function HomePage() {
       desc: features("agentic.description"),
       accent: "emerald" as const,
       span: "md:col-span-2" as const,
+      image: "/images/bento-agentic.webp",
     },
     {
       icon: CloudSun,
@@ -175,6 +174,7 @@ export default function HomePage() {
       desc: features("swing.description"),
       accent: "emerald" as const,
       span: "md:col-span-2" as const,
+      image: "/images/bento-swing.webp",
     },
   ];
 
@@ -210,7 +210,7 @@ export default function HomePage() {
             width={150}
             height={40}
             priority
-            className="h-[35px] w-auto"
+            className="h-8.75 w-auto"
           />
 
           {/* Desktop nav */}
@@ -431,8 +431,12 @@ export default function HomePage() {
                   transition={{ delay: i * 0.1, duration: 0.5 }}
                   className="flex flex-col items-center justify-center py-4 md:py-0"
                 >
-                  <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                  <div className="text-sm text-white/50 uppercase tracking-wider text-center">{stat.label}</div>
+                  <div className="text-4xl font-bold text-white mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-white/50 uppercase tracking-wider text-center">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -440,10 +444,7 @@ export default function HomePage() {
         </section>
 
         {/* ═══════════════ PROBLEM & SOLUTION ═══════════════ */}
-        <SectionWrapper
-          id="technology"
-          className="relative py-24 sm:py-32"
-        >
+        <SectionWrapper id="technology" className="relative py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
@@ -595,14 +596,14 @@ export default function HomePage() {
                     variants={scaleIn}
                     className={`group ${card.span}`}
                   >
-                    <Card className="relative h-full border-white/5 bg-white/2 overflow-hidden transition-all duration-300 hover:border-white/10 hover:bg-white/4">
+                    <Card className="relative h-full border-white/5 bg-white/2 overflow-hidden transition-all duration-300 hover:border-white/10 hover:bg-white/4 flex flex-col">
                       {/* Hover glow */}
                       <div
                         className={`absolute -top-24 -right-24 h-48 w-48 rounded-full transition-opacity duration-500 opacity-0 group-hover:opacity-100 blur-[80px] ${
                           isEmerald ? "bg-emerald/10" : "bg-blue/10"
                         }`}
                       />
-                      <CardHeader className="relative">
+                      <CardHeader className="relative z-10">
                         <div
                           className={`mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg ${
                             isEmerald
@@ -616,15 +617,40 @@ export default function HomePage() {
                           {card.title}
                         </CardTitle>
                       </CardHeader>
-                      <CardContent className="relative">
+                      <CardContent className="relative z-10 flex-1">
                         <CardDescription className="text-white/50 text-sm leading-relaxed">
                           {card.desc}
                         </CardDescription>
                       </CardContent>
+                      {card.image && (
+                        <div className="relative h-48 w-full mt-auto overflow-hidden border-t border-white/5">
+                          <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] to-transparent z-10 opacity-80" />
+                          <Image
+                            src={card.image}
+                            alt={card.title}
+                            fill
+                            className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-60"
+                          />
+                        </div>
+                      )}
                     </Card>
                   </motion.div>
                 );
               })}
+
+              {/* Vertical Image Placeholder */}
+              <motion.div
+                variants={scaleIn}
+                className="relative hidden md:block md:col-start-3 md:row-start-2 md:row-span-2 overflow-hidden rounded-xl border border-white/5 bg-white/2 group min-h-100 lg:min-h-100"
+              >
+                <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] to-transparent z-10 opacity-80" />
+                <Image
+                  src="/images/bento-vertical.webp"
+                  alt="ParSense AI Analysis"
+                  fill
+                  className="object-cover opacity-40 transition-opacity duration-500 group-hover:opacity-60"
+                />
+              </motion.div>
             </motion.div>
           </div>
         </SectionWrapper>
@@ -772,9 +798,21 @@ export default function HomePage() {
 
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { quote: testimonials("t1Quote"), author: testimonials("t1Author"), role: testimonials("t1Role") },
-                { quote: testimonials("t2Quote"), author: testimonials("t2Author"), role: testimonials("t2Role") },
-                { quote: testimonials("t3Quote"), author: testimonials("t3Author"), role: testimonials("t3Role") },
+                {
+                  quote: testimonials("t1Quote"),
+                  author: testimonials("t1Author"),
+                  role: testimonials("t1Role"),
+                },
+                {
+                  quote: testimonials("t2Quote"),
+                  author: testimonials("t2Author"),
+                  role: testimonials("t2Role"),
+                },
+                {
+                  quote: testimonials("t3Quote"),
+                  author: testimonials("t3Author"),
+                  role: testimonials("t3Role"),
+                },
               ].map((t, i) => (
                 <motion.div
                   key={i}
@@ -788,15 +826,24 @@ export default function HomePage() {
                     <div className="mb-6">
                       <div className="flex gap-1 mb-4">
                         {[...Array(5)].map((_, j) => (
-                          <svg key={j} className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
+                          <svg
+                            key={j}
+                            className="w-4 h-4 text-emerald"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                           </svg>
                         ))}
                       </div>
-                      <p className="text-white/70 italic text-sm leading-relaxed">{t.quote}</p>
+                      <p className="text-white/70 italic text-sm leading-relaxed">
+                        {t.quote}
+                      </p>
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm">{t.author}</p>
+                      <p className="text-white font-semibold text-sm">
+                        {t.author}
+                      </p>
                       <p className="text-white/40 text-xs">{t.role}</p>
                     </div>
                   </Card>
@@ -945,8 +992,12 @@ export default function HomePage() {
                   custom={i}
                 >
                   <Card className="border-white/5 bg-white/2 p-6">
-                    <h3 className="text-lg font-medium text-white mb-2">{item.q}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{item.a}</p>
+                    <h3 className="text-lg font-medium text-white mb-2">
+                      {item.q}
+                    </h3>
+                    <p className="text-white/50 text-sm leading-relaxed">
+                      {item.a}
+                    </p>
                   </Card>
                 </motion.div>
               ))}
@@ -977,20 +1028,29 @@ export default function HomePage() {
               >
                 {cta("subtitle")}
               </motion.p>
-              
+
               <motion.div
                 variants={fadeUp}
                 custom={2}
                 className="mt-10 max-w-md mx-auto"
               >
-                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => { e.preventDefault(); alert(cta("success")); }}>
-                  <input 
-                    type="email" 
+                <form
+                  className="flex flex-col sm:flex-row gap-3"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    alert(cta("success"));
+                  }}
+                >
+                  <input
+                    type="email"
                     required
-                    placeholder={cta("placeholder")} 
+                    placeholder={cta("placeholder")}
                     className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 focus:border-emerald focus:outline-none focus:ring-1 focus:ring-emerald transition-colors"
                   />
-                  <Button type="submit" className="bg-emerald hover:bg-emerald/90 text-white rounded-xl px-8 py-6 h-auto font-medium shadow-lg shadow-emerald/20">
+                  <Button
+                    type="submit"
+                    className="bg-emerald hover:bg-emerald/90 text-white rounded-xl px-8 py-6 h-auto font-medium shadow-lg shadow-emerald/20"
+                  >
                     {cta("button")}
                   </Button>
                 </form>
