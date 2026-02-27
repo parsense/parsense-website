@@ -210,7 +210,7 @@ export default function HomePage() {
             width={150}
             height={40}
             priority
-            className="h-8 w-auto"
+            className="h-[35px] w-auto"
           />
 
           {/* Desktop nav */}
