@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, AnimatePresence, useMotionValueEvent } from "framer-motion";
 import {
   Brain,
   CloudSun,
@@ -18,6 +18,7 @@ import {
   Apple,
   Play,
   ArrowDown,
+  ArrowUp,
   Menu,
   Globe,
 } from "lucide-react";
@@ -85,7 +86,7 @@ function StoreButton({
   storeName: string;
 }) {
   return (
-    <div className="relative group">
+    <div className="relative group cursor-pointer">
       <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-sm transition-all group-hover:border-emerald/30 group-hover:bg-white/8">
         {store === "apple" ? (
           <Apple className="h-7 w-7 text-white" />
@@ -122,13 +123,24 @@ export default function HomePage() {
   const cta = useTranslations("CTA");
   const footer = useTranslations("Footer");
   const heroRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
+  const { scrollYProgress, scrollY } = useScroll({
     target: heroRef,
     offset: ["start start", "end start"],
   });
   const heroOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const heroScale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  // Use the global scrollY to determine when to show the "Back to Top" button
+  const { scrollY: globalScrollY } = useScroll();
+  useMotionValueEvent(globalScrollY, "change", (latest) => {
+    if (latest > 600) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  });
 
   const navLinks = [
     { label: nav("features"), href: "#features" },
@@ -211,7 +223,8 @@ export default function HomePage() {
             width={150}
             height={40}
             priority
-            className="h-8.75 w-auto"
+            className="h-8.75 w-auto cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
 
           {/* Desktop nav */}
@@ -1096,7 +1109,8 @@ export default function HomePage() {
                 alt="ParSense"
                 width={150}
                 height={40}
-                className="h-8 w-auto"
+                className="h-8 w-auto cursor-pointer"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               />
               <p className="text-xs text-white/30">{footer("tagline")}</p>
             </div>
@@ -1127,6 +1141,22 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
+
+      {/* ═══════════════ BACK TO TOP ═══════════════ */}
+      <AnimatePresence>
+        {showBackToTop && (
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-6 right-6 z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-[#0B1120]/80 backdrop-blur-md border border-emerald/30 text-emerald shadow-lg shadow-emerald/20 transition-all hover:bg-emerald/10 hover:border-emerald/50"
+            aria-label="Back to top"
+          >
+            <ArrowUp className="h-5 w-5" />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </>
   );
 }

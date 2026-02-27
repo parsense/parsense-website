@@ -23,7 +23,7 @@ export default function LanguageToggle({ className }: LanguageToggleProps) {
       <button
         onClick={() => switchLocale("en")}
         className={cn(
-          "rounded-full px-3 py-1 text-xs font-medium transition-colors",
+          "cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors",
           locale === "en"
             ? "bg-emerald-500 text-white"
             : "text-white/60 hover:text-white"
@@ -34,7 +34,7 @@ export default function LanguageToggle({ className }: LanguageToggleProps) {
       <button
         onClick={() => switchLocale("es")}
         className={cn(
-          "rounded-full px-3 py-1 text-xs font-medium transition-colors",
+          "cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors",
           locale === "es"
             ? "bg-emerald-500 text-white"
             : "text-white/60 hover:text-white"
