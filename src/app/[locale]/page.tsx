@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
@@ -31,7 +32,6 @@ import {
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import SectionWrapper from "@/components/section-wrapper";
-import { ParsenseLogo } from "@/components/svg/parsense-logo";
 import HeroBackground from "@/components/svg/hero-background";
 import AppMockup from "@/components/svg/app-mockup";
 import SwingAnalysis from "@/components/svg/swing-analysis";
@@ -204,7 +204,14 @@ export default function HomePage() {
         className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5"
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <ParsenseLogo variant="full" />
+          <Image
+            src="/images/parsense-logo.webp"
+            alt="ParSense"
+            width={150}
+            height={40}
+            priority
+            className="h-8 w-auto"
+          />
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-8 md:flex">
@@ -1017,7 +1024,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
             <div className="flex flex-col items-center gap-2 md:items-start">
-              <ParsenseLogo variant="full" />
+              <Image
+                src="/images/parsense-logo.webp"
+                alt="ParSense"
+                width={150}
+                height={40}
+                className="h-8 w-auto"
+              />
               <p className="text-xs text-white/30">{footer("tagline")}</p>
             </div>
             <div className="flex items-center gap-6">
